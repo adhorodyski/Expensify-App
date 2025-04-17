@@ -37,6 +37,7 @@ jobs:
         uses: callstackincubator/android@333f590005be752c28f07e36fa7151be3b2e18da
         env:
           PROJECT_ROOT_PATH: ${{ matrix.project_root }}
+          IS_HYBRID_APP: ${{ matrix.is_hybrid_build }}
         with:
           variant: ${{ matrix.variant }}
           github-token: ${{ github.token }}
