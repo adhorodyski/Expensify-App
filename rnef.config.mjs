@@ -12,4 +12,7 @@ export default {
         ios: platformIOS({sourceDir: isHybrid ? './Mobile-Expensify/iOS' : './ios'}),
         android: platformAndroid({sourceDir: isHybrid ? './Mobile-Expensify/Android' : './android'}),
     },
+    fingerprint: {
+        extraSources: isHybrid ? ['./Mobile-Expensify'] : [],
+    },
 };
